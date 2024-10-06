@@ -74,7 +74,7 @@ const Home: React.FC = () =>{
           </div>
           <div id='dois'>
             <input type="text" id='salario' placeholder='Salário' />
-            <input type="number" id='tempo_empresa' placeholder='Tempo de empresa em anos' />
+            <input type="number" id='tempo_empresa' min={0} max={100} placeholder='Tempo de empresa em anos' />
           </div>
           <button onClick={salvarFuncionario}>Salvar</button>
         </div>
